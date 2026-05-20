@@ -140,22 +140,24 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(3rem, 7vw, 5.5rem);
-    font-weight: 900;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 300;
     line-height: 1.1;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.05em;
     margin-bottom: 25px;
     margin-left: -3px;
+    text-transform: uppercase;
 }
 
 .hero-title-ja {
     display: block;
     font-family: 'Shippori Mincho', "Noto Serif JP", serif;
-    font-size: clamp(1.1rem, 3vw, 1.6rem);
-    font-weight: 500;
-    letter-spacing: 0.25em;
+    font-size: clamp(0.9rem, 2.2vw, 1.3rem);
+    font-weight: 300;
+    letter-spacing: 0.4em;
     color: var(--text-muted);
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .hero-subtitle {
