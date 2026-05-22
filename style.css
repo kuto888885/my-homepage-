@@ -423,17 +423,18 @@ body {
 
 .socials {
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .socials a {
     color: var(--bg-main);
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    font-size: 1.6rem;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .socials a:hover {
     color: #888;
+    transform: translateY(-3px);
 }
 
 .footer-bottom {
