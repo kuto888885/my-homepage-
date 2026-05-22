@@ -424,17 +424,21 @@ body {
 .socials {
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 
 .socials a {
     color: var(--bg-main);
-    font-size: 2.2rem;
+    font-size: 2.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: color 0.3s, transform 0.3s;
 }
 
 .socials a:hover {
     color: #888;
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .footer-bottom {
