@@ -423,12 +423,12 @@ body {
 
 .socials {
     display: flex;
-    gap: 35px;
+    gap: 40px;
 }
 
 .socials a {
     color: var(--bg-main);
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     transition: color 0.3s, transform 0.3s;
 }
 
