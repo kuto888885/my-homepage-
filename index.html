@@ -13,7 +13,7 @@
     <link rel="icon" href="images/favicon.png?v=2" type="image/png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2">
 
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
             <a href="#home" class="modern-logo">ODAKUTO.</a>
             <nav class="modern-nav">
                 <a href="#about">Profile</a>
-                <a href="#skills">Skills</a>
+                <a href="#services">What I Can Do</a>
                 <a href="#timeline">History</a>
                 <a href="#work">Work</a>
             </nav>
@@ -94,51 +94,63 @@
         </div>
     </section>
 
-    <!-- Skills Section [02/SKILLS] -->
-    <section id="skills" class="modern-section bg-gray">
+    <!-- Skills & Services Section [02/SERVICES] -->
+    <section id="services" class="modern-section bg-gray">
         <div class="section-inner">
-            <span class="section-tag">[ 02 / SKILLS ]</span>
-            <h2 class="section-title">Skills & Tools</h2>
+            <span class="section-tag">[ 02 / SERVICES ]</span>
+            <h2 class="section-title">What I Can Do</h2>
             
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <span class="skill-num">01</span>
-                    <h3 class="skill-title">Electronics</h3>
-                    <p class="skill-desc">高専で培った電子工学の知見をベースに、回路設計やCAD、Arduino等のマイコンを用いたハードウェアの試作開発を行います。</p>
-                    <div class="skill-tags">
-                        <span>Circuit Design</span>
-                        <span>CAD</span>
-                        <span>MCU</span>
-                    </div>
+            <!-- Core Value Cards -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title">デバイス・試作品の開発支援</h3>
+                    <p class="service-desc">アイデア段階のプロダクトを、電子回路と3Dモデリングを用いて、実際に動く「プロトタイプ（試作品）」の形に具現化します。高専での技術と知見を活かしたアプローチを提供します。</p>
                 </div>
-                <div class="skill-card">
-                    <span class="skill-num">02</span>
-                    <h3 class="skill-title">Programming</h3>
-                    <p class="skill-desc">Pythonを用いたデータ処理や、C/C++による組み込み制御、HTML/CSS/JSによる洗練されたWebフロントエンドの実装が可能です。</p>
-                    <div class="skill-tags">
-                        <span>Python</span>
-                        <span>C / C++</span>
-                        <span>HTML/CSS/JS</span>
-                    </div>
+                <div class="service-card">
+                    <h3 class="service-title">Web & UI/UXデザイン</h3>
+                    <p class="service-desc">美しく、かつ使いやすいミニマルなWebサイトやモバイルアプリのUI/UXを設計します。デザインだけでなく、フロントエンドの実装（HTML/CSS）までワンストップで対応可能です。</p>
                 </div>
-                <div class="skill-card">
-                    <span class="skill-num">03</span>
-                    <h3 class="skill-title">UI/UX Design</h3>
-                    <p class="skill-desc">ただ機能を並べるのではなく、ユーザー体験（UX）を第一に考えた、美しく直感的でミニマルなUIデザインをFigma等で設計します。</p>
-                    <div class="skill-tags">
-                        <span>UI/UX Design</span>
-                        <span>Figma</span>
-                        <span>Adobe CC</span>
-                    </div>
+                <div class="service-card">
+                    <h3 class="service-title">イベント企画 ＆ 組織創出</h3>
+                    <p class="service-desc">学生コミュニティの立ち上げや、ハッカソン・アイデアソンの企画、学校や地域と連携したイベントの運営など、アントレプレナーシップ（起業家精神）を活かしてゼロから形にします。</p>
                 </div>
-                <div class="skill-card">
-                    <span class="skill-num">04</span>
-                    <h3 class="skill-title">Management</h3>
-                    <p class="skill-desc">釧路高専アントレプレナーシップ部を自ら立ち上げて部長を務め、イベントの企画・運営や、ビジネスコンテストでのチーム推進を行います。</p>
-                    <div class="skill-tags">
-                        <span>Entrepreneurship</span>
-                        <span>Leadership</span>
-                        <span>Planning</span>
+            </div>
+            
+            <!-- Compact Technical Stack (Integrated elegantly below) -->
+            <div class="skills-compact-wrap">
+                <h4 class="compact-skills-title">Technical Stack & Expertises</h4>
+                <div class="compact-skills-groups">
+                    <div class="compact-skill-category">
+                        <span class="category-name">Hardware</span>
+                        <div class="skill-tags">
+                            <span>Circuit Design</span>
+                            <span>3D CAD / Modeling</span>
+                            <span>MCU (Arduino/Pi)</span>
+                        </div>
+                    </div>
+                    <div class="compact-skill-category">
+                        <span class="category-name">Software</span>
+                        <div class="skill-tags">
+                            <span>Python (Data)</span>
+                            <span>C / C++ (Embedded)</span>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                    </div>
+                    <div class="compact-skill-category">
+                        <span class="category-name">Design</span>
+                        <div class="skill-tags">
+                            <span>UI/UX Design</span>
+                            <span>Figma</span>
+                            <span>Adobe Illustrator</span>
+                        </div>
+                    </div>
+                    <div class="compact-skill-category">
+                        <span class="category-name">Business</span>
+                        <div class="skill-tags">
+                            <span>Business Planning</span>
+                            <span>Leadership</span>
+                            <span>Management</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,33 +173,10 @@
         </div>
     </section>
 
-    <!-- Services Section [04/SERVICES] -->
-    <section id="services" class="modern-section bg-gray">
+    <!-- History Section [04/TIMELINE] -->
+    <section id="timeline" class="modern-section bg-gray">
         <div class="section-inner">
-            <span class="section-tag">[ 04 / SERVICES ]</span>
-            <h2 class="section-title">What I Can Do</h2>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3 class="service-title">デバイス・試作品の開発支援</h3>
-                    <p class="service-desc">アイデア段階のプロダクトを、電子回路と3Dモデリングを用いて、実際に動く「プロトタイプ（試作品）」の形に具現化します。高専での技術と知見を活かしたアプローチを提供します。</p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-title">Web & UI/UXデザイン</h3>
-                    <p class="service-desc">美しく、かつ使いやすいミニマルなWebサイトやモバイルアプリのUI/UXを設計します。デザインだけでなく、フロントエンドの実装（HTML/CSS）までワンストップで対応可能です。</p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-title">イベント企画 ＆ 組織創出</h3>
-                    <p class="service-desc">学生コミュニティの立ち上げや、ハッカソン・アイデアソンの企画、学校や地域と連携したイベントの運営など、アントレプレナーシップ（起業家精神）を活かしてゼロから形にします。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- History Section [05/TIMELINE] -->
-    <section id="timeline" class="modern-section">
-        <div class="section-inner">
-            <span class="section-tag">[ 05 / TIMELINE ]</span>
+            <span class="section-tag">[ 04 / TIMELINE ]</span>
             <h2 class="section-title">History</h2>
 
             <div class="modern-timeline">
@@ -268,10 +257,10 @@
         </div>
     </section>
 
-    <!-- Work Section [06/PROJECTS] -->
-    <section id="work" class="modern-section bg-gray">
+    <!-- Work Section [05/PROJECTS] -->
+    <section id="work" class="modern-section">
         <div class="section-inner">
-            <span class="section-tag">[ 06 / PROJECTS ]</span>
+            <span class="section-tag">[ 05 / PROJECTS ]</span>
             <h2 class="section-title">Projects</h2>
             
             <div class="project-list">
@@ -323,10 +312,10 @@
         </div>
     </section>
 
-    <!-- News Section [07/NEWS] -->
-    <section id="news" class="modern-section">
+    <!-- News Section [06/NEWS] -->
+    <section id="news" class="modern-section bg-gray">
         <div class="section-inner">
-            <span class="section-tag">[ 07 / NEWS ]</span>
+            <span class="section-tag">[ 06 / NEWS ]</span>
             <h2 class="section-title">News & Media</h2>
             
             <div class="news-list">
@@ -338,7 +327,7 @@
                 <div class="news-item">
                     <span class="news-date">2026.01</span>
                     <span class="news-category">Media</span>
-                    <h3 class="news-title">YouTube「みんなの高専チャンネル」にて釧路高専生としての1日密着動画に出演</h3>
+                    <h3 class="news-title">YouTube「みんなの高専チャンネル」にて釧路高専生としての1日密着動画が出演</h3>
                 </div>
                 <div class="news-item">
                     <span class="news-date">2024.11</span>
@@ -349,10 +338,10 @@
         </div>
     </section>
 
-    <!-- Footer / Contact [08/CONTACT] -->
+    <!-- Footer / Contact [07/CONTACT] -->
     <footer id="contact" class="modern-footer">
         <div class="section-inner">
-            <span class="section-tag">[ 08 / CONTACT ]</span>
+            <span class="section-tag">[ 07 / CONTACT ]</span>
             <h2 class="footer-title">Let's build something together.</h2>
             <p class="footer-desc">プロジェクトの相談や、お仕事の依頼などお気軽にお問い合わせください。</p>
             

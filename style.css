@@ -631,73 +631,61 @@ body {
 }
 
 /* ==========================================================================
-   Skills Section [02/SKILLS]
+   Compact Technical Stack (Integrated elegantly below services)
    ========================================================================== */
-.skills-grid {
+.skills-compact-wrap {
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid var(--border-light);
+}
+
+.compact-skills-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.compact-skills-groups {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+    gap: 40px;
 }
 
-.skill-card {
-    background-color: transparent;
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    padding: 40px 30px;
+.compact-skill-category {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    gap: 20px;
 }
 
-.skill-card:hover {
-    border-color: var(--text-main);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-}
-
-.skill-num {
+.category-name {
     font-family: 'Outfit', sans-serif;
     font-size: 0.8rem;
-    font-weight: 400;
-    color: var(--text-light);
-    margin-bottom: 25px;
-}
-
-.skill-title {
-    font-family: var(--font-serif);
-    font-size: 1.3rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     color: var(--text-main);
-    letter-spacing: 0.05em;
 }
 
-.skill-desc {
+.compact-skill-category .skill-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.compact-skill-category .skill-tags span {
+    font-family: var(--font-sans);
     font-size: 0.85rem;
     font-weight: 300;
     color: var(--text-muted);
-    line-height: 1.8;
-    margin-bottom: 30px;
-    flex-grow: 1;
-}
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.skill-tags span {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.62rem;
-    font-weight: 400;
-    padding: 6px 12px;
-    border: 1px solid var(--border-light);
-    border-radius: 30px;
-    color: var(--text-muted);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 0;
 }
 
 /* ==========================================================================
@@ -932,7 +920,7 @@ body {
     .project-card { grid-template-columns: 1fr; gap: 30px; margin-bottom: 80px; }
     .project-image { aspect-ratio: 16 / 9; }
     
-    .skills-grid { grid-template-columns: 1fr; gap: 20px; }
+    .compact-skills-groups { grid-template-columns: 1fr; gap: 35px; }
     .services-grid { grid-template-columns: 1fr; gap: 20px; }
     .news-item { grid-template-columns: 1fr; gap: 15px; padding: 25px 0; }
     .news-item:hover { transform: none; }
