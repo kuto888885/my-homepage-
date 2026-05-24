@@ -630,14 +630,290 @@ body {
     letter-spacing: 0.05em;
 }
 
-.back-to-top {
-    color: var(--bg-main);
-    text-decoration: none;
-    font-weight: 500;
+/* ==========================================================================
+   Skills Section [02/SKILLS]
+   ========================================================================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.back-to-top:hover {
-    text-decoration: underline;
+.skill-card {
+    background-color: transparent;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-card:hover {
+    border-color: var(--text-main);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.skill-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+.skill-title {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text-main);
+    letter-spacing: 0.05em;
+}
+
+.skill-desc {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tags span {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 400;
+    padding: 6px 12px;
+    border: 1px solid var(--border-light);
+    border-radius: 30px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   Services Section [04/SERVICES]
+   ========================================================================== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: transparent;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 50px 35px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover {
+    border-color: var(--text-main);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.service-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: var(--text-main);
+    letter-spacing: 0.05em;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.service-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background-color: var(--text-light);
+}
+
+.service-desc {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.9;
+}
+
+/* ==========================================================================
+   News Section [07/NEWS]
+   ========================================================================== */
+.news-list {
+    border-top: 1px solid var(--border-light);
+    margin-top: 40px;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 6fr;
+    gap: 40px;
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border-light);
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.news-item:hover {
+    transform: translateX(10px);
+}
+
+.news-date {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+.news-category {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid var(--text-main);
+    border-radius: 30px;
+    color: var(--text-main);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: fit-content;
+}
+
+.news-title {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text-main);
+    letter-spacing: 0.03em;
+}
+
+/* ==========================================================================
+   Contact Form [08/CONTACT]
+   ========================================================================== */
+.contact-form {
+    max-width: 650px;
+    margin: 50px 0 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #888;
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 12px 0;
+    color: var(--bg-main);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #555;
+    font-weight: 300;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--bg-main);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    border: 1px solid var(--bg-main);
+    padding: 15px 35px;
+    border-radius: 40px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: transparent;
+    color: var(--bg-main);
+    transform: translateY(-3px);
+}
+
+/* Projects buttons spacing & alignment */
+.project-list {
+    margin-top: 40px;
+}
+
+.project-links {
+    margin-top: 30px;
+}
+
+.project-link-btn {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-main);
+    text-decoration: none;
+    border: 1px solid var(--border-light);
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.05em;
+    transition: all 0.3s;
+}
+
+.project-link-btn:hover {
+    border-color: var(--text-main);
+    background-color: var(--text-main);
+    color: var(--bg-main);
+    transform: translateY(-2px);
 }
 
 /* Responsive */
@@ -655,6 +931,12 @@ body {
     
     .project-card { grid-template-columns: 1fr; gap: 30px; margin-bottom: 80px; }
     .project-image { aspect-ratio: 16 / 9; }
+    
+    .skills-grid { grid-template-columns: 1fr; gap: 20px; }
+    .services-grid { grid-template-columns: 1fr; gap: 20px; }
+    .news-item { grid-template-columns: 1fr; gap: 15px; padding: 25px 0; }
+    .news-item:hover { transform: none; }
+    .contact-form { max-width: 100%; margin-bottom: 80px; }
     
     .footer-links { flex-direction: column; gap: 40px; align-items: flex-start; }
     .email-link { font-size: 1.2rem; }
