@@ -24,7 +24,7 @@ html {
 
 body {
     font-family: var(--font-sans);
-    font-weight: 400;
+    font-weight: 400; /* ベースのウェイトを400（標準）に戻して可読性を確保 */
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.8;
@@ -64,7 +64,7 @@ body {
     font-weight: 400;
     color: var(--text-main);
     text-decoration: none;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
 }
 
 .modern-nav {
@@ -76,7 +76,7 @@ body {
     font-family: 'Outfit', sans-serif;
     color: var(--text-main);
     text-decoration: none;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.05em;
     transition: color 0.3s;
@@ -95,7 +95,7 @@ body {
     padding: 10px 24px;
     border-radius: 40px;
     text-decoration: none;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -120,9 +120,9 @@ body {
 
 .section-title {
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-size: clamp(2.0rem, 4.5vw, 2.8rem);
     font-weight: 300;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 100px;
     color: var(--text-main);
@@ -298,7 +298,7 @@ body {
 .data-label {
     font-family: 'Outfit', sans-serif;
     font-size: 0.68rem;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: var(--text-muted);
@@ -307,10 +307,10 @@ body {
 
 .data-value {
     font-family: var(--font-sans);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 500;
     color: var(--text-main);
-    line-height: 1.5;
+    line-height: 1.6;
     letter-spacing: 0.02em;
 }
 
@@ -323,7 +323,7 @@ body {
 .pill {
     font-family: var(--font-sans);
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px 20px;
     background-color: var(--bg-gray);
     border: 1px solid var(--border-light);
@@ -335,9 +335,9 @@ body {
 /* Vision Section */
 #vision .section-title {
     font-family: var(--font-serif);
-    font-weight: 500;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    letter-spacing: 0.15em;
+    font-weight: 600;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    letter-spacing: 0.12em;
     line-height: 1.5;
 }
 
@@ -351,10 +351,10 @@ body {
 
 .vision-text {
     font-family: var(--font-serif);
-    font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+    font-size: clamp(1.05rem, 2.2vw, 1.3rem);
     font-weight: 400;
-    line-height: 2.2;
-    color: var(--text-main);
+    line-height: 2.3;
+    color: var(--text-muted);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -389,7 +389,7 @@ body {
 
 .timeline-year {
     font-family: 'Outfit', sans-serif;
-    font-size: 3.2rem;
+    font-size: 3.0rem;
     font-weight: 300;
     line-height: 1;
     letter-spacing: 0.05em;
@@ -410,7 +410,7 @@ body {
 .item-month {
     font-family: 'Outfit', sans-serif;
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--text-muted);
     width: 40px;
     letter-spacing: 0.1em;
@@ -423,8 +423,8 @@ body {
 .item-title {
     font-family: var(--font-sans);
     font-size: 1.15rem;
-    font-weight: 500;
-    margin-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 12px;
     letter-spacing: 0.02em;
 }
 
@@ -462,7 +462,7 @@ body {
 .project-category {
     font-family: 'Outfit', sans-serif;
     font-size: 0.72rem;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: var(--text-muted);
@@ -471,10 +471,10 @@ body {
 }
 
 .project-title {
-    font-family: var(--font-sans);
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    font-family: var(--font-serif);
+    font-size: 2.0rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     margin-bottom: 20px;
 }
 
@@ -495,7 +495,7 @@ body {
 
 .footer-title {
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-size: clamp(2.0rem, 4.5vw, 3.2rem);
     font-weight: 300;
     letter-spacing: 0.08em;
     margin-bottom: 40px;
