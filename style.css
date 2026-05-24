@@ -24,7 +24,7 @@ html {
 
 body {
     font-family: var(--font-sans);
-    font-weight: 300;
+    font-weight: 400;
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.8;
@@ -60,11 +60,11 @@ body {
 
 .modern-logo {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
+    font-size: 1.15rem;
+    font-weight: 400;
     color: var(--text-main);
     text-decoration: none;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
 }
 
 .modern-nav {
@@ -76,9 +76,9 @@ body {
     font-family: 'Outfit', sans-serif;
     color: var(--text-main);
     text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 300;
-    letter-spacing: 0.08em;
+    font-size: 0.82rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
     transition: color 0.3s;
 }
 
@@ -89,7 +89,7 @@ body {
 .contact-btn {
     font-family: 'Outfit', sans-serif;
     font-size: 0.78rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--bg-main);
     background-color: var(--text-main);
     padding: 10px 24px;
@@ -121,7 +121,7 @@ body {
 .section-title {
     font-family: 'Outfit', sans-serif;
     font-size: clamp(2.2rem, 5vw, 3.2rem);
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     margin-bottom: 100px;
@@ -297,38 +297,39 @@ body {
 
 .data-label {
     font-family: 'Outfit', sans-serif;
-    font-size: 0.65rem;
-    font-weight: 300;
+    font-size: 0.68rem;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--text-light);
-    margin-bottom: 20px;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    margin-bottom: 15px;
 }
 
 .data-value {
-    font-family: var(--font-serif);
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 500;
     color: var(--text-main);
     line-height: 1.5;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
 }
 
 .achievements-wrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
 }
 
 .pill {
-    font-family: var(--font-serif);
-    font-size: 0.82rem;
-    font-weight: 500;
-    padding: 12px 24px;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 10px 20px;
     background-color: var(--bg-gray);
+    border: 1px solid var(--border-light);
     border-radius: 50px;
     color: var(--text-main);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
 }
 
 /* Vision Section */
@@ -351,9 +352,9 @@ body {
 .vision-text {
     font-family: var(--font-serif);
     font-size: clamp(1.05rem, 2.5vw, 1.35rem);
-    font-weight: 300;
-    line-height: 2.3;
-    color: var(--text-muted);
+    font-weight: 400;
+    line-height: 2.2;
+    color: var(--text-main);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -389,7 +390,7 @@ body {
 .timeline-year {
     font-family: 'Outfit', sans-serif;
     font-size: 3.2rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1;
     letter-spacing: 0.05em;
     color: var(--text-light);
@@ -420,16 +421,16 @@ body {
 }
 
 .item-title {
-    font-family: var(--font-serif);
-    font-size: 1.2rem;
+    font-family: var(--font-sans);
+    font-size: 1.15rem;
     font-weight: 500;
-    margin-bottom: 15px;
-    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
 }
 
 .item-desc {
     font-size: 0.92rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--text-muted);
     line-height: 1.8;
 }
@@ -460,26 +461,26 @@ body {
 
 .project-category {
     font-family: 'Outfit', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 300;
+    font-size: 0.72rem;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--text-light);
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
     display: block;
     margin-bottom: 15px;
 }
 
 .project-title {
-    font-family: var(--font-serif);
-    font-size: 2.0rem;
+    font-family: var(--font-sans);
+    font-size: 1.8rem;
     font-weight: 500;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     margin-bottom: 20px;
 }
 
 .project-desc {
     font-size: 0.95rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--text-muted);
     line-height: 1.8;
     max-width: 700px;
@@ -495,7 +496,7 @@ body {
 .footer-title {
     font-family: 'Outfit', sans-serif;
     font-size: clamp(2.2rem, 5vw, 3.5rem);
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 0.08em;
     margin-bottom: 40px;
     color: var(--bg-main);
@@ -503,7 +504,7 @@ body {
 
 .footer-desc {
     font-size: 1.05rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #888;
     max-width: 600px;
     margin-bottom: 100px;
@@ -522,7 +523,7 @@ body {
 .email-link {
     font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--bg-main);
     text-decoration: none;
     letter-spacing: 0.05em;
