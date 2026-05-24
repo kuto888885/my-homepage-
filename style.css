@@ -614,6 +614,12 @@ body {
     margin-bottom: 50px;
 }
 
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .email-link {
     font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
@@ -621,10 +627,25 @@ body {
     color: var(--bg-main);
     text-decoration: none;
     letter-spacing: 0.05em;
+    transition: color 0.3s;
 }
 
 .email-link:hover {
-    text-decoration: underline;
+    color: #888;
+}
+
+.tel-link {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--bg-main);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+}
+
+.tel-link:hover {
+    color: #888;
 }
 
 .socials {
@@ -975,5 +996,5 @@ body {
     .contact-form { max-width: 100%; margin-bottom: 80px; }
     
     .footer-links { flex-direction: column; gap: 40px; align-items: flex-start; }
-    .email-link { font-size: 1.2rem; }
+    .email-link, .tel-link { font-size: 1.2rem; }
 }
