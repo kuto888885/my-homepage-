@@ -24,7 +24,7 @@ html {
 
 body {
     font-family: var(--font-sans);
-    font-weight: 400; /* ベースのウェイトを400（標準）に戻して可読性を確保 */
+    font-weight: 300;
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.8;
@@ -60,11 +60,11 @@ body {
 
 .modern-logo {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.15rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 300;
     color: var(--text-main);
     text-decoration: none;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .modern-nav {
@@ -77,8 +77,8 @@ body {
     color: var(--text-main);
     text-decoration: none;
     font-size: 0.8rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
+    font-weight: 300;
+    letter-spacing: 0.08em;
     transition: color 0.3s;
 }
 
@@ -89,13 +89,13 @@ body {
 .contact-btn {
     font-family: 'Outfit', sans-serif;
     font-size: 0.78rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--bg-main);
     background-color: var(--text-main);
     padding: 10px 24px;
     border-radius: 40px;
     text-decoration: none;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -118,13 +118,24 @@ body {
     margin: 0 auto;
 }
 
+.section-tag {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
 .section-title {
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(2.0rem, 4.5vw, 2.8rem);
-    font-weight: 300;
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-weight: 200;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     color: var(--text-main);
 }
 
@@ -282,62 +293,80 @@ body {
 .modern-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    gap: 60px 80px;
     margin-bottom: 100px;
 }
 
 .data-block {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 25px;
+    transition: border-color 0.3s;
+}
+
+.data-block:hover {
+    border-color: var(--text-muted);
 }
 
 .full-width {
     grid-column: 1 / -1;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .data-label {
     font-family: 'Outfit', sans-serif;
-    font-size: 0.68rem;
-    font-weight: 500;
+    font-size: 0.65rem;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--text-muted);
+    letter-spacing: 0.22em;
+    color: var(--text-light);
     margin-bottom: 15px;
 }
 
 .data-value {
-    font-family: var(--font-sans);
-    font-size: 1.15rem;
-    font-weight: 500;
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 400;
     color: var(--text-main);
-    line-height: 1.6;
-    letter-spacing: 0.02em;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
 }
 
 .achievements-wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    margin-top: 15px;
 }
 
 .pill {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
     font-size: 0.8rem;
     font-weight: 500;
     padding: 10px 20px;
-    background-color: var(--bg-gray);
+    background-color: transparent;
     border: 1px solid var(--border-light);
-    border-radius: 50px;
+    border-radius: 4px;
     color: var(--text-main);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pill:hover {
+    background-color: var(--text-main);
+    color: var(--bg-main);
+    border-color: var(--text-main);
+    transform: translateY(-2px);
 }
 
 /* Vision Section */
 #vision .section-title {
     font-family: var(--font-serif);
-    font-weight: 600;
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-    letter-spacing: 0.12em;
+    font-weight: 500;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: 0.15em;
     line-height: 1.5;
 }
 
@@ -351,8 +380,8 @@ body {
 
 .vision-text {
     font-family: var(--font-serif);
-    font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-    font-weight: 400;
+    font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+    font-weight: 300;
     line-height: 2.3;
     color: var(--text-muted);
     max-width: 800px;
@@ -389,11 +418,14 @@ body {
 
 .timeline-year {
     font-family: 'Outfit', sans-serif;
-    font-size: 3.0rem;
-    font-weight: 300;
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 200;
     line-height: 1;
     letter-spacing: 0.05em;
     color: var(--text-light);
+    position: sticky;
+    top: 140px;
+    height: fit-content;
 }
 
 .timeline-events {
@@ -410,7 +442,7 @@ body {
 .item-month {
     font-family: 'Outfit', sans-serif;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-muted);
     width: 40px;
     letter-spacing: 0.1em;
@@ -421,16 +453,16 @@ body {
 }
 
 .item-title {
-    font-family: var(--font-sans);
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    letter-spacing: 0.02em;
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
 }
 
 .item-desc {
     font-size: 0.92rem;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--text-muted);
     line-height: 1.8;
 }
@@ -459,28 +491,63 @@ body {
     transform: scale(1.02);
 }
 
+.project-card {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.project-image {
+    width: 100%;
+    background-color: var(--bg-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .project-category {
     font-family: 'Outfit', sans-serif;
-    font-size: 0.72rem;
-    font-weight: 500;
+    font-size: 0.65rem;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--text-muted);
+    letter-spacing: 0.22em;
+    color: var(--text-light);
     display: block;
     margin-bottom: 15px;
 }
 
 .project-title {
     font-family: var(--font-serif);
-    font-size: 2.0rem;
-    font-weight: 600;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: 500;
     letter-spacing: 0.05em;
     margin-bottom: 20px;
+    color: var(--text-main);
 }
 
 .project-desc {
     font-size: 0.95rem;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--text-muted);
     line-height: 1.8;
     max-width: 700px;
@@ -495,8 +562,8 @@ body {
 
 .footer-title {
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(2.0rem, 4.5vw, 3.2rem);
-    font-weight: 300;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 200;
     letter-spacing: 0.08em;
     margin-bottom: 40px;
     color: var(--bg-main);
@@ -504,7 +571,7 @@ body {
 
 .footer-desc {
     font-size: 1.05rem;
-    font-weight: 400;
+    font-weight: 300;
     color: #888;
     max-width: 600px;
     margin-bottom: 100px;
@@ -523,7 +590,7 @@ body {
 .email-link {
     font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--bg-main);
     text-decoration: none;
     letter-spacing: 0.05em;
@@ -584,7 +651,10 @@ body {
     .modern-grid { grid-template-columns: 1fr; gap: 50px; }
     
     .timeline-row { grid-template-columns: 1fr; gap: 40px; margin-bottom: 80px; }
-    .timeline-year { font-size: 2.5rem; }
+    .timeline-year { font-size: 2.5rem; position: relative; top: 0; }
+    
+    .project-card { grid-template-columns: 1fr; gap: 30px; margin-bottom: 80px; }
+    .project-image { aspect-ratio: 16 / 10; }
     
     .footer-links { flex-direction: column; gap: 40px; align-items: flex-start; }
     .email-link { font-size: 1.2rem; }
