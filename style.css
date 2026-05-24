@@ -504,7 +504,7 @@ body {
     background-color: var(--bg-gray);
     border-radius: 8px;
     overflow: hidden;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
 }
 
 .project-image img {
@@ -654,7 +654,7 @@ body {
     .timeline-year { font-size: 2.5rem; position: relative; top: 0; }
     
     .project-card { grid-template-columns: 1fr; gap: 30px; margin-bottom: 80px; }
-    .project-image { aspect-ratio: 16 / 10; }
+    .project-image { aspect-ratio: 16 / 9; }
     
     .footer-links { flex-direction: column; gap: 40px; align-items: flex-start; }
     .email-link { font-size: 1.2rem; }
