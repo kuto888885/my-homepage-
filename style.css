@@ -686,6 +686,25 @@ body {
     border: none;
     background: none;
     border-radius: 0;
+    transition: color 0.3s;
+    cursor: default;
+}
+
+.compact-skill-category .skill-tags span::before {
+    content: '#';
+    margin-right: 6px;
+    color: var(--text-light);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.compact-skill-category .skill-tags span:hover {
+    color: var(--text-main);
+}
+
+.compact-skill-category .skill-tags span:hover::before {
+    color: var(--text-main);
 }
 
 /* ==========================================================================
