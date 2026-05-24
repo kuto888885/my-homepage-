@@ -7,8 +7,9 @@
     --text-light: #BBBBBB;
     --border-light: #EEEEEE;
     
-    /* Typography - Clean Sans-Serif */
-    --font-sans: 'Inter', "Noto Sans JP", -apple-system, BlinkMacSystemFont, sans-serif;
+    /* Typography - Premium Hybrid */
+    --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Shippori Mincho', "Noto Serif JP", serif;
 }
 
 * {
@@ -23,6 +24,7 @@ html {
 
 body {
     font-family: var(--font-sans);
+    font-weight: 300;
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.8;
@@ -57,11 +59,12 @@ body {
 }
 
 .modern-logo {
-    font-size: 1rem;
-    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
     color: var(--text-main);
     text-decoration: none;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .modern-nav {
@@ -70,11 +73,12 @@ body {
 }
 
 .modern-nav a {
+    font-family: 'Outfit', sans-serif;
     color: var(--text-main);
     text-decoration: none;
     font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
+    font-weight: 300;
+    letter-spacing: 0.08em;
     transition: color 0.3s;
 }
 
@@ -83,14 +87,15 @@ body {
 }
 
 .contact-btn {
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 400;
     color: var(--bg-main);
     background-color: var(--text-main);
     padding: 10px 24px;
     border-radius: 40px;
     text-decoration: none;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -114,10 +119,12 @@ body {
 }
 
 .section-title {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    margin-bottom: 120px;
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 200;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 100px;
     color: var(--text-main);
 }
 
@@ -289,20 +296,22 @@ body {
 }
 
 .data-label {
-    font-size: 0.7rem;
-    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     color: var(--text-light);
     margin-bottom: 20px;
 }
 
 .data-value {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 400;
     color: var(--text-main);
     line-height: 1.5;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.05em;
 }
 
 .achievements-wrap {
@@ -312,19 +321,20 @@ body {
 }
 
 .pill {
-    font-size: 0.85rem;
+    font-family: var(--font-serif);
+    font-size: 0.82rem;
     font-weight: 500;
     padding: 12px 24px;
     background-color: var(--bg-gray);
     border-radius: 50px;
     color: var(--text-main);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
 }
 
 /* Vision Section */
 #vision .section-title {
-    font-family: 'Shippori Mincho', "Noto Serif JP", serif;
-    font-weight: 600;
+    font-family: var(--font-serif);
+    font-weight: 500;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     letter-spacing: 0.15em;
     line-height: 1.5;
@@ -339,9 +349,10 @@ body {
 }
 
 .vision-text {
-    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-    font-weight: 400;
-    line-height: 2.2;
+    font-family: var(--font-serif);
+    font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+    font-weight: 300;
+    line-height: 2.3;
     color: var(--text-muted);
     max-width: 800px;
     margin: 0 auto;
@@ -376,10 +387,11 @@ body {
 }
 
 .timeline-year {
-    font-size: 3rem;
-    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 200;
     line-height: 1;
-    letter-spacing: -0.03em;
+    letter-spacing: 0.05em;
     color: var(--text-light);
 }
 
@@ -395,11 +407,12 @@ body {
 }
 
 .item-month {
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
     color: var(--text-muted);
     width: 40px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .item-content {
@@ -407,14 +420,16 @@ body {
 }
 
 .item-title {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 500;
     margin-bottom: 15px;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.05em;
 }
 
 .item-desc {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
+    font-weight: 300;
     color: var(--text-muted);
     line-height: 1.8;
 }
@@ -444,24 +459,27 @@ body {
 }
 
 .project-category {
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     color: var(--text-light);
     display: block;
     margin-bottom: 15px;
 }
 
 .project-title {
-    font-size: 2.2rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-family: var(--font-serif);
+    font-size: 2.0rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
     margin-bottom: 20px;
 }
 
 .project-desc {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-weight: 300;
     color: var(--text-muted);
     line-height: 1.8;
     max-width: 700px;
@@ -475,15 +493,17 @@ body {
 }
 
 .footer-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 200;
+    letter-spacing: 0.08em;
     margin-bottom: 40px;
     color: var(--bg-main);
 }
 
 .footer-desc {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    font-weight: 300;
     color: #888;
     max-width: 600px;
     margin-bottom: 100px;
@@ -500,11 +520,12 @@ body {
 }
 
 .email-link {
+    font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 300;
     color: var(--bg-main);
     text-decoration: none;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.05em;
 }
 
 .email-link:hover {
