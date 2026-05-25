@@ -439,8 +439,8 @@ body {
 .timeline-row {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 80px;
-    margin-bottom: 120px;
+    gap: 50px;
+    margin-bottom: 60px;
 }
 
 .timeline-year {
@@ -458,12 +458,12 @@ body {
 .timeline-events {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
 }
 
 .timeline-item {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .item-month {
@@ -483,7 +483,7 @@ body {
     font-family: var(--font-serif);
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     letter-spacing: 0.05em;
 }
 
