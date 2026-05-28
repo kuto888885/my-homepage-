@@ -1079,7 +1079,10 @@ body {
     .modern-nav, .contact-btn { display: none; }
     
     .hero-container { grid-template-columns: 1fr; gap: 40px; text-align: center; padding-top: 60px; }
+    .hero-content { align-items: center; text-align: center; }
     .hero-title { margin-left: 0; }
+    .hero-divider { margin: 35px auto; transform-origin: center; }
+    .hero-socials { justify-content: center; }
     
     .modern-section { padding: 120px 8%; }
     .modern-grid { grid-template-columns: 1fr; gap: 50px; }
