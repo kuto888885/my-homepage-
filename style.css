@@ -1269,99 +1269,6 @@ body {
 }
 
 /* ==========================================================================
-   Collaboration & Now / Next Section [06.5/COLLABORATION]
-   ========================================================================== */
-.now-next-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 80px;
-    align-items: flex-start;
-}
-
-.now-next-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.collab-title {
-    font-family: var(--font-serif);
-    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: 0.08em;
-    color: var(--text-main);
-    margin-bottom: 30px;
-}
-
-.collab-desc {
-    font-size: 0.95rem;
-    font-weight: 300;
-    color: var(--text-muted);
-    line-height: 1.9;
-}
-
-.now-next-right {
-    background-color: var(--bg-main);
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    padding: 50px 40px;
-}
-
-.needs-title {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--text-light);
-    margin-bottom: 35px;
-}
-
-.needs-list {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    list-style: none;
-}
-
-.needs-list li {
-    display: flex;
-    gap: 25px;
-    align-items: flex-start;
-}
-
-.need-icon {
-    font-size: 1.4rem;
-    line-height: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2px;
-}
-
-.need-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.need-content strong {
-    font-family: var(--font-serif);
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: var(--text-main);
-    letter-spacing: 0.02em;
-}
-
-.need-content p {
-    font-size: 0.88rem;
-    font-weight: 300;
-    color: var(--text-muted);
-    line-height: 1.7;
-}
-
-/* ==========================================================================
    Responsive Adjustments for New Sections
    ========================================================================== */
 @media (max-width: 900px) {
@@ -1376,14 +1283,6 @@ body {
         padding: 20px;
     }
     
-    .now-next-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    
-    .now-next-right {
-        padding: 35px 25px;
-    }
 }
 
 /* Utilities */
