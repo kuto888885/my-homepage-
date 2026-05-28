@@ -464,9 +464,16 @@ body {
     display: inline;
 }
 
+.mobile-br {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .mobile-hidden {
         display: none;
+    }
+    .mobile-br {
+        display: block;
     }
 }
 
