@@ -389,38 +389,6 @@ body {
     padding: 30px 25px;
 }
 
-.profile-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 80px;
-    border-top: 1px solid var(--border-light);
-    padding-top: 50px;
-}
-
-.stat-item {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.stat-number {
-    font-family: 'Outfit', sans-serif;
-    font-size: clamp(2.5rem, 5vw, 3.8rem);
-    font-weight: 200;
-    color: var(--text-main);
-    line-height: 1;
-}
-
-.stat-label {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.72rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--text-light);
-}
 
 .modern-grid {
     display: grid;
@@ -1175,7 +1143,6 @@ body {
     .hero-divider { margin: 35px auto; transform-origin: center; }
     .hero-socials { justify-content: center; }
     .profile-layout-grid { grid-template-columns: 1fr; gap: 40px; }
-    .profile-stats-grid { grid-template-columns: 1fr; gap: 40px; margin-top: 50px; padding-top: 40px; }
     
     .modern-section { padding: 120px 8%; }
     .modern-grid { grid-template-columns: 1fr; gap: 50px; }
