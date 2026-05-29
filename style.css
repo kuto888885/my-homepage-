@@ -1332,106 +1332,6 @@ body {
 }
 
 /* ==========================================================================
-   Quick Log Section [06.3/QUICKLOG]
-   ========================================================================== */
-.quick-log-timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
-    position: relative;
-}
-
-.quick-log-timeline::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: 20px;
-    width: 1px;
-    background-color: var(--border-light);
-}
-
-.log-item {
-    display: flex;
-    gap: 40px;
-    position: relative;
-    padding-left: 50px;
-    transition: transform 0.3s;
-}
-
-.log-item::before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 17px;
-    width: 7px;
-    height: 7px;
-    background-color: var(--text-light);
-    border-radius: 50%;
-    z-index: 2;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.log-item:hover::before {
-    background-color: var(--text-main);
-    transform: scale(1.4);
-}
-
-.log-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    min-width: 100px;
-}
-
-.log-date {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text-main);
-}
-
-.log-category {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.65rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--text-light);
-}
-
-.log-body {
-    background-color: var(--bg-main);
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    padding: 25px 30px;
-    width: 100%;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.log-item:hover .log-body {
-    border-color: var(--text-main);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.02);
-}
-
-.log-title {
-    font-family: var(--font-serif);
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: var(--text-main);
-    margin-bottom: 12px;
-    letter-spacing: 0.03em;
-}
-
-.log-desc {
-    font-size: 0.88rem;
-    font-weight: 300;
-    color: var(--text-muted);
-    line-height: 1.8;
-}
-
-/* ==========================================================================
    Responsive Adjustments for New Sections
    ========================================================================== */
 @media (max-width: 900px) {
@@ -1446,25 +1346,6 @@ body {
         padding: 20px;
     }
     
-    .quick-log-timeline::before {
-        left: 10px;
-    }
-    
-    .log-item {
-        flex-direction: column;
-        gap: 15px;
-        padding-left: 30px;
-    }
-    
-    .log-item::before {
-        left: 7px;
-    }
-    
-    .log-meta {
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-    }
 }
 
 /* Utilities */
