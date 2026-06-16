@@ -286,7 +286,6 @@ body {
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    filter: grayscale(100%);
 }
 
 @keyframes fadeInUp {
