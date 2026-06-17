@@ -258,27 +258,34 @@ body {
 
 .hero-socials {
     display: flex;
-    gap: 22px;
-    margin-top: 32px;
+    gap: 26px;
+    margin-top: 36px;
     align-items: center;
     opacity: 0;
     transform: translateY(16px);
     animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    animation-delay: 1s;
+    animation-delay: 0.8s;
 }
 
 .hero-socials a {
-    color: var(--text-light);
-    font-size: 1.4rem;
+    color: var(--text-main);
+    font-size: 1.85rem;
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    transition: color 0.25s;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s, opacity 0.3s;
+    opacity: 0.7;
 }
 
 .hero-socials a:hover {
-    color: var(--text-main);
+    opacity: 1;
+    transform: translateY(-4px);
 }
+
+.hero-socials a[title="GitHub"]:hover { color: #24292f; }
+.hero-socials a[title="Instagram"]:hover { color: #E4405F; }
+.hero-socials a[title="Facebook"]:hover { color: #1877F2; }
+.hero-socials a[title="LINE"]:hover { color: #06C755; }
 
 .hero-image {
     width: 100%;
