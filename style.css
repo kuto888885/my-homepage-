@@ -11,7 +11,7 @@
     --border: #E8E8E8;
 
     --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-serif: 'Shippori Mincho', "Noto Serif JP", serif;
+    --font-serif: var(--font-sans);
 
     --max-width: 1200px;
     --h-pad: 5%;
