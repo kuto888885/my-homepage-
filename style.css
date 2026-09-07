@@ -286,6 +286,7 @@ body {
 .hero-socials a[title="Instagram"]:hover { color: #E4405F; }
 .hero-socials a[title="Facebook"]:hover { color: #1877F2; }
 .hero-socials a[title="LINE"]:hover { color: #06C755; }
+.hero-socials a[title="YouTube"]:hover { color: #FF0000; }
 
 .hero-image {
     width: 100%;
