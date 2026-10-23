@@ -1081,80 +1081,52 @@ body {
     line-height: 1.85;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 0 100px;
+.contact-action-wrap {
+    margin: 0 0 96px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    align-items: flex-start;
+    gap: 18px;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.form-group label {
-    font-family: var(--font-sans);
-    font-size: 0.65rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    color: #666;
-}
-
-.form-group input,
-.form-group textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #333;
-    padding: 10px 0;
-    color: var(--bg-main);
+.contact-googleform-btn {
     font-family: var(--font-sans);
     font-size: 0.92rem;
-    font-weight: 400;
-    outline: none;
-    transition: border-color 0.25s;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: #444;
-    font-weight: 400;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: var(--bg-main);
-}
-
-.form-group textarea {
-    min-height: 110px;
-    resize: vertical;
-}
-
-.submit-btn {
-    align-self: flex-start;
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
     font-weight: 700;
     color: var(--text-main);
     background-color: var(--bg-main);
     border: 1px solid var(--bg-main);
-    padding: 13px 32px;
-    border-radius: 0;
-    cursor: pointer;
-    letter-spacing: 0.1em;
+    padding: 16px 36px;
+    text-decoration: none;
+    letter-spacing: 0.08em;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    transition: all 0.25s;
+    gap: 12px;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.submit-btn:hover {
+.contact-googleform-btn:hover {
     background-color: transparent;
     color: var(--bg-main);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+.contact-googleform-btn i {
+    font-size: 0.82rem;
+    transition: transform 0.25s ease;
+}
+
+.contact-googleform-btn:hover i {
+    transform: translate(2px, -2px);
+}
+
+.contact-note {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: #888888;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
 }
 
 .footer-links {
