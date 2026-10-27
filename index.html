@@ -24,7 +24,7 @@
     <link rel="icon" href="images/favicon.png?v=2" type="image/png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2">
 
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=32">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -47,7 +47,6 @@
 
     <!-- Hero Section -->
     <section class="modern-hero" id="home">
-        <div id="hero-canvas-container" class="hero-canvas-container"></div>
         <div class="hero-container">
             <div class="hero-content">
 
@@ -258,31 +257,11 @@
                 <span>これからはもっと外に出て、</span><span class="text-black">実際に体験することがより大きな価値になる</span><span>と信じています。</span><br>
                 <span>リアルな「体験」こそが、</span><span>最も人の心を深く動かすから。</span>
             </p>
-            <div class="vision-interactive-wrap">
-                <div class="vision-view-switcher">
-                    <button id="vision-view-3d" class="vision-tab-btn active" type="button">
-                        <i class="fa-solid fa-cube"></i> 3D Pavilion (Interactive)
-                    </button>
-                    <button id="vision-view-2d" class="vision-tab-btn" type="button">
-                        <i class="fa-regular fa-image"></i> Concept Art
-                    </button>
-                </div>
-                
-                <div class="vision-stage-container">
-                    <!-- 3D Procedural Model Stage (Default) -->
-                    <div id="vision-3d-stage" class="vision-stage-3d">
-                        <div class="stage-overlay-hint">
-                            <span><i class="fa-solid fa-arrows-spin"></i> ドラッグで360°回転</span>
-                        </div>
-                    </div>
-                    <!-- 2D Image Stage -->
-                    <div id="vision-2d-stage" class="vision-stage-2d" style="display: none;">
-                        <picture>
-                            <source srcset="images/theme_park_future_real.webp" type="image/webp">
-                            <img src="images/theme_park_future_real.png" alt="Future Theme Park Vision" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                </div>
+            <div class="vision-image">
+                <picture>
+                    <source srcset="images/theme_park_future_real.webp" type="image/webp">
+                    <img src="images/theme_park_future_real.png" alt="Future Theme Park Vision" loading="lazy" decoding="async">
+                </picture>
             </div>
         </div>
     </section>
@@ -426,31 +405,16 @@
 
                 <!-- Project 3: Business Card -->
                 <div class="project-card">
-                    <div class="project-image-interactive">
-                        <div class="project-view-switcher">
-                            <button id="card-view-3d" class="project-tab-btn active" type="button">
-                                <i class="fa-solid fa-cube"></i> 3D Card
-                            </button>
-                            <button id="card-view-2d" class="project-tab-btn" type="button">
-                                <i class="fa-regular fa-image"></i> Photo
-                            </button>
-                        </div>
-                        <div id="card-3d-stage" class="card-stage-3d">
-                            <button id="card-flip-action-btn" class="card-flip-badge" type="button">
-                                <i class="fa-solid fa-repeat"></i> 表 / 裏を切り替える
-                            </button>
-                        </div>
-                        <div id="card-2d-stage" class="card-stage-2d" style="display: none;">
-                            <picture>
-                                <source srcset="images/business_card.webp" type="image/webp">
-                                <img src="images/business_card.jpg" alt="釧路高専 & アントレプレナーシップ部 名刺デザイン" loading="lazy" decoding="async" class="object-contain">
-                            </picture>
-                        </div>
+                    <div class="project-image bg-white">
+                        <picture>
+                            <source srcset="images/business_card.webp" type="image/webp">
+                            <img src="images/business_card.jpg" alt="釧路高専 & アントレプレナーシップ部 名刺デザイン" loading="lazy" decoding="async" class="object-contain">
+                        </picture>
                     </div>
                     <div class="project-info">
                         <span class="project-category">Graphic Design</span>
                         <h3 class="project-title">自己ブランディングのための自作名刺デザイン</h3>
-                        <p class="project-desc">自身の二面性（アイデンティティ）を表現するために、レイアウト構成からアバターイラスト作成、ロゴ配置まで一貫して自身で手がけたオリジナル名刺。釧路高専の学生としてのフォーマルな「表面（伝統的な明朝体）」と、自身が部長を務めるアントレプレナーシップ部としてのカジュアルな「裏面（カラフルなロゴと親しみやすいイラスト）」を併せ持ち、渡す相手や状況に応じて使い分けられるデザインに仕上げました（3Dビューでカードを傾けたり、表裏を切り替えて鑑賞できます）。</p>
+                        <p class="project-desc">自身の二面性（アイデンティティ）を表現するために、レイアウト構成からアバターイラスト作成、ロゴ配置まで一貫して自身で手がけたオリジナル名刺。釧路高専の学生としてのフォーマルな「表面（伝統的な明朝体）」と、自身が部長を務めるアントレプレナーシップ部としてのカジュアルな「裏面（カラフルなロゴと親しみやすいイラスト）」を併せ持ち、渡す相手や状況に応じて使い分けられるデザインに仕上げました。</p>
                     </div>
                 </div>
 
@@ -574,10 +538,7 @@
         </div>
     </footer>
 
-    <!-- Three.js Library & Procedural 3D Engine -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
-    <script src="three-scene.js?v=2"></script>
 </body>
 
 </html>
