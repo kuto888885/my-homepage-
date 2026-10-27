@@ -182,6 +182,8 @@ body {
    HERO
    ========================================================================== */
 .modern-hero {
+    position: relative;
+    overflow: hidden;
     min-height: 100vh;
     padding: calc(var(--header-h) + 100px) var(--h-pad) 120px;
     display: flex;
@@ -189,7 +191,19 @@ body {
     border-bottom: 1px solid var(--border);
 }
 
+.hero-canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
 .hero-container {
+    position: relative;
+    z-index: 2;
     max-width: var(--max-width);
     width: 100%;
     margin: 0 auto;
@@ -728,6 +742,109 @@ body {
 .mobile-hidden { display: inline; }
 .mobile-br { display: none; }
 
+.vision-interactive-wrap {
+    margin-top: 60px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.vision-view-switcher {
+    display: inline-flex;
+    background: var(--bg-off);
+    border: 1px solid var(--border);
+    padding: 4px;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.vision-tab-btn {
+    background: transparent;
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 8px 18px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vision-tab-btn:hover {
+    color: var(--text-main);
+}
+
+.vision-tab-btn.active {
+    background: var(--text-main);
+    color: var(--bg-main);
+}
+
+.vision-stage-container {
+    position: relative;
+    width: 100%;
+    background-color: #05070a;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+}
+
+.vision-stage-3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: grab;
+}
+
+.vision-stage-3d:active {
+    cursor: grabbing;
+}
+
+.vision-stage-3d canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.stage-overlay-hint {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(10, 10, 15, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.04em;
+    user-select: none;
+}
+
+.vision-stage-2d {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-main);
+}
+
+.vision-stage-2d img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Fallback legacy image styling */
 .vision-image {
     margin-top: 80px;
     max-width: 860px;
@@ -886,6 +1003,107 @@ body {
 .project-card:hover .project-image img {
     transform: scale(1.04);
     filter: grayscale(0%);
+}
+
+.project-image-interactive {
+    width: 100%;
+    background-color: #0b0c10;
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-view-switcher {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+    display: flex;
+    gap: 4px;
+    background: rgba(15, 17, 23, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.project-tab-btn {
+    background: transparent;
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-tab-btn:hover {
+    color: #ffffff;
+}
+
+.project-tab-btn.active {
+    background: #ffffff;
+    color: #111111;
+}
+
+.card-stage-3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-stage-3d canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.card-flip-badge {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.92);
+    color: #111111;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    transition: all 0.25s ease;
+}
+
+.card-flip-badge:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-stage-2d {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.card-stage-2d img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .project-info {
@@ -1364,12 +1582,19 @@ body {
 
     .video-card { grid-template-columns: 1fr; gap: 24px; padding: 18px; }
 
+    .vision-stage-container { aspect-ratio: 16 / 11; }
+    .project-image-interactive { aspect-ratio: 16 / 11; }
+
     .mobile-hidden { display: none; }
     .mobile-br { display: block; }
 }
 
 @media (max-width: 480px) {
     .gallery-grid { grid-template-columns: 1fr; }
+    .vision-stage-container { aspect-ratio: 4 / 3; }
+    .project-image-interactive { aspect-ratio: 4 / 3; }
+    .vision-tab-btn { font-size: 0.7rem; padding: 6px 12px; }
+    .card-flip-badge { font-size: 0.68rem; padding: 6px 12px; bottom: 10px; right: 10px; }
 }
 
 /* ==========================================================================
